@@ -25,8 +25,8 @@ group :assets do
   gem 'uglifier'
 end
 
-gem 'therubyracer'
-gem 'jquery-rails'
+# gem 'therubyracer'
+# gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
