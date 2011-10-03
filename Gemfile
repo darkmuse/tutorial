@@ -2,19 +2,24 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
-gem 'pg'
+group :production do
+  gem 'pg'
+end
 
 group :development do
+  gem 'sqlite3'
   gem 'rspec-rails', '2.6.1'
 end
 
 group :test do
+  gem 'sqlite3'
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
   gem 'spork', '0.9.0.rc8'
+  gem 'autotest', '4.4.6'
+  gem 'autotest-rails-pure', '4.1.2'
+  gem 'autotest-fsevent', '0.2.4'
+  gem 'autotest-growl', '0.2.9'
 end
 
 # Gems used only for assets and not required
@@ -25,7 +30,6 @@ group :assets do
   gem 'uglifier'
 end
 
-# gem 'therubyracer'
 # gem 'jquery-rails'
 
 # Use unicorn as the web server
